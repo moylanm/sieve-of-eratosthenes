@@ -51,17 +51,10 @@ class SieveTester
   end
 
   def print_results
-    # return send(:puts, 'Needs to be run.') if ran_sieves?
-
     wait_for_run unless @run_complete
 
     TablePrinter.print(Table.new(['Upper Bound', 'Run Time (seconds)'], results),
                        "Ran #{sieves.length} sieves...")
-  end
-
-  def ran_sieves?
-    #@run_complete && @running
-    # TODO: wtf was i thinking here?
   end
 
   private
