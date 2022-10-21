@@ -124,7 +124,7 @@ class TablePrinter
     puts
     puts message_string
     puts
-    puts header_string + "\n" + separator_string
+    puts "#{header_string}\n#{separator_string}"
     puts data_string
   end
 
