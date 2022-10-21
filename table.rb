@@ -18,7 +18,6 @@ class Table
 end
 
 class TableValidator
-
   def initialize(table)
     raise ArgumentError unless table.is_a?(Table)
 
@@ -59,7 +58,6 @@ class TableValidator
 end
 
 class TableEvaluator
-
   def initialize(table)
     raise ArgumentError unless table.is_a?(Table)
 
@@ -101,7 +99,6 @@ class TableEvaluator
 end
 
 class TablePrinter
-
   DEFAULT_MESSAGE = 'Printing table...'.freeze
   DEFAULT_DELIMITER = ' | '.freeze
 
