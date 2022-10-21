@@ -1,5 +1,5 @@
 class Table
-  attr_reader :headers, :data, :meta_data
+  attr_reader :headers, :data
 
   def initialize(headers, data)
     @headers = sanitize(headers)
